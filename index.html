@@ -1,297 +1,958 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>WebEngage Test page</title>
-  <link href="./assets/css/app.bundle.css" rel="stylesheet">
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Web Developer Portfolio Template</title>
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/7.0.0/normalize.css">
    <script id='_webengage_script_tag' type='text/javascript'>
 var webengage;!function(w,e,b,n,g){function o(e,t){e[t[t.length-1]]=function(){r.__queue.push([t.join("."),
 arguments])}}var i,s,r=w[b],z=" ",l="init options track screen onReady".split(z),a="webPersonalization feedback survey notification notificationInbox".split(z),c="options render clear abort".split(z),p="Prepare Render Open Close Submit Complete View Click".split(z),u="identify login logout setAttribute".split(z);if(!r||!r.__v){for(w[b]=r={__queue:[],__v:"6.0",user:{}},i=0;i < l.length;i++)o(r,[l[i]]);for(i=0;i < a.length;i++){for(r[a[i]]={},s=0;s < c.length;s++)o(r[a[i]],[a[i],c[s]]);for(s=0;s < p.length;s++)o(r[a[i]],[a[i],"on"+p[s]])}for(i=0;i < u.length;i++)o(r.user,["user",u[i]]);setTimeout(function(){var f=e.createElement("script"),d=e.getElementById("_webengage_script_tag");f.type="text/javascript",f.async=!0,f.src=("https:"==e.location.protocol?"https://ssl.widgets.webengage.com":"http://cdn.widgets.webengage.com")+"/js/webengage-min-v-6.0.js",d.parentNode.insertBefore(f,d)})}}(window,document,"webengage");webengage.init("~15ba1dbb5");
 </script>
-    <style>
-      :root{
-  --red: rgb(170, 30, 50);
-  --blue: rgb(60, 80, 130);
-  --grey: rgb(50, 55, 60);
-  --key: rgb(20, 20, 20);
-}
-
-*{
+</head>
+<style>
+  /* start main rulez*/
+/**{
   box-sizing: border-box;
-  margin:  0 auto;
+}*/
+
+body {
+  /*width: auto;*/
+  /*background-color: #888;*/
+  /*height:4000px;*/
+  /*margin: auto;*/
 }
 
-html{
-  scroll-behavior: smooth;
+.container {
+  width: 80%;
+  /*Orginal Width 1170 */
+  margin: auto;
+  /*background-color: #fff;*/
 }
 
-body{
-  margin: 0;
-  font-family: "Poppins", sans-serif;
-}
-
-#navbar{
-  position: fixed;
-  top: 0;
+.containerB {
   width: 100%;
-  height: 60px;
-  background-color: var(--red);
-  box-shadow: 0px 2px rgb(0, 0, 0, 0.5);
-  display: flex;
-  justify-content: right;
-  align-items: center;
-  z-index: 1;
+  /*Orginal Width 1170 */
+  margin: auto;
+  /*background-color: #fff;*/
+  box-sizing: border-box;
 }
 
-.nav-link{
+.clearfix {
+  clear: both;
+}
+/* End main rulez*/
+
+/* Start Header */
+.header .slider {
+  background-color: #eee;
+  height: 600px;
+  /*background-image: url(HeroImg.jpg);
+  background-size: cover;*/
+
+  -webkit-background-image: url(https://source.unsplash.com/KgjcndVr7tU/1920x1080);
+  -moz-background-image: url(https://source.unsplash.com/KgjcndVr7tU/1920x1080);
+  -o-background-image: url(https://source.unsplash.com/KgjcndVr7tU/1920x1080);
+  background-image: url(https://source.unsplash.com/KgjcndVr7tU/1920x1080);
+  background-size: cover;
+}
+
+.header .slider .intro {
+  padding-top: 250px;
   text-align: center;
-  vertical-align: center;
-  padding: 15px 21px;
-  color: white;
-  text-decoration: none;
-  font-size: 20px;
+  color: #fff;
 }
 
-.nav-link:last-of-type{
-  margin-right: 12px;
-}
-
-.nav-link:hover{
-  background-color: var(--blue);
-}
-
-#welcome-section{
-  padding-top: 60px;
-  height: 100vh;
-  margin: 0;
-  background: linear-gradient(
-    60deg,
-    var(--grey),
-    var(--key));
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-h1{
-  color: white;
-  font-size: 4rem;
-  font-weight: 700;
-  margin: 0;
-}
-
-.italic{
-  font-style: italic;
-  font-weight: 400;
-}
-
-#ws-subtitle{
-  color: var(--red);
-  margin: 0;
-  font-size: 2rem;
-}
-
-#projects{
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  background-color: var(--blue);
-  padding-top: 68px;
-}
-
-#projects-title{
-  margin: 0;
-  text-align: center;
-  font-size: 36px;
-  color: white;
-}
-
-hr{
-  color: white;
-  margin: 0 auto 72px;
-  width: calc(100% - 48px);
-}
-
-#project-grid{
-  width: calc(100% - 48px);
+.header .slider .intro h2 {
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 24px;
-  justify-content: center;
-
+  font-size: 50px;
+  text-shadow: 5px 5px 5px #252f31;
+  /*width: 650px;*/
+  border-top: 4px solid #fff;
+  border-bottom: 4px solid #fff;
+  padding: 5px 0;
 }
 
-.project-tile{
-  background-color: var(--grey);
-  text-decoration: none;
-  border-radius: 4px;
-}
-
-.project-tile img{
-  width: 100%;
-  border-radius: 4px 4px 0 0;
-}
-
-.project-tile p{
-  text-align: center;
-  vertical-align: center;
-  color: white;
-}
-
-p::before{
-  content: "< ";
-  color: rgba(255, 100, 50, 0);
-  position: absolute;
-  transform: translateX(-16px);
-  transition: color 0.2s linear;
-}
-
-p::after{
-  content: "/>";
-  color: rgba(255, 100, 50, 0);
-  position: absolute;
-  transform: translateX(6px);
-  transition: color 0.2s linear;
-}
-
-.project-tile:hover p::before{
-  color: rgba(255, 100, 50, 1);
-}
-
-.project-tile:hover p::after{
-  color: rgba(255, 100, 50, 1);
-}
-
-.btn{
-  padding: 48px 0;
-  text-align: center;
-}
-
-.see-more{
-  padding: 8px 32px 8px 12px;
-  background-color: var(--grey);
-  color: white;
-  text-decoration: none;
-  border-radius: 4px;
+.header .slider .intro button {
+  background: none;
+  color: #fff;
+  /*width: 140px;*/
+  margin-top: 40px;
   font-size: 20px;
-  transition: background-color 0.2s ease;
+  border: 2px solid #fff;
+  font-weight: bold;
+  padding: 10px 30px;
 }
 
-.see-more:hover{
-  background-color: var(--red);
+.header .navbar {
+  background-color: #252f31;
+  color: #fff;
+  overflow: hidden;
+  /*text-transform: uppercase;*/
 }
 
-#link-arrow{
-  font-weight: 400;
-  vertical-align: center;
-  position: absolute;
-  transform: translateX(7px) scale(1.8,1.8);
-  transition: transform 0.2s ease-in-out;
+.header .navbar h2 {
+  float: left;
+  text-transform: uppercase;
 }
 
-.see-more:hover #link-arrow{
-  transform: translateX(9px) scale(1.8,1.8);
+.header .navbar h2 span {
+  color: #2ecc71;
 }
 
-#contact{
-  height: 100vh;
-  margin: 0;
-  background-color: var(--grey);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.header .navbar ul {
+  list-style: none;
+  padding-left: 0;
+  overflow: hidden;
+  float: right;
 }
 
-#contact-title{
-  font-size: 48px;
-  color: white;
-  margin: 0;
+.header .navbar ul li {
+  float: left;
+  padding: 10px;
 }
 
-#contact-subtitle{
-  color: white;
-  font-size: 18px;
-  margin: 0;
-}
-
-#profile-link{
-  color: white;
+.header .navbar ul li a {
+  color: #fff;
   text-decoration: none;
-  font-size: 24px;
-  margin-top: 64px;
-  margin-bottom: -16px;
-  text-shadow: 2px 2px black;
-  transition: transform 0.3s ease-out;
 }
 
-#profile-link:hover{
-  /*animation: 0.4s move-down;
-  animation-fill-mode: forwards;*/
-  transform: translateY(8px);
+.header .navbar ul li.active a, .header .navbar ul li a:hover {
+  color: #2ecc71;
+}
+/* End Header */
+
+/* Strat Features */
+.features {
+  overflow: hidden;
+  padding-top: 40px;
+  padding-bottom: 80px;
+  /*box-sizing: border-box;*/
 }
 
-@media(max-width: 1080px){
-  #project-grid{
-    grid-template-columns: 1fr 1fr;
+.features .feat {
+  float: left;
+  width: 33.333333%;
+  height: 150px;
+  box-sizing: border-box;
+}
+
+.features .feat h2 {
+  /*text-transform: uppercase;*/
+  color: #555;
+}
+
+.features .feat p {
+  line-height: 1.5;
+  color: #888;
+  /*text-align: justify;*/
+  /*padding: 0 20px 0 0;*/
+}
+/* End Features */
+
+/* Start About Me */
+.about-me {
+  background-color: #f2f2f2;
+  overflow: hidden;
+  /*width: 100%;*/
+}
+  /*border: 0.5em solid;*/
+.about-me >div{
+  /*box-sizing: border-box;*/
+}
+.about-me .image {
+  float: left;
+  width: 30% ;
+  /*height: 600px;*/
+
+}
+
+.about-me .image img {
+  width: 100%;
+  /*height: 100%;*/
+}
+
+.about-me .info {
+  float: left;
+  width: 65%;
+  margin: 1.5% 2.5% 0 2.5%;
+}
+
+.about-me .info h2 {
+  margin: 20px 0 20px 40px;
+  color: #555;
+}
+.about-me .info >p {
+  margin: 0 0 10px 40px;
+}
+.about-me .info > p:last-of-type {
+  margin-top: 10px;
+
+}
+.about-me .info  p {
+  line-height: 1.5;
+  color: #888;
+}
+.about-me .info .hobbies {
+  overflow: hidden;
+  margin: 20px 0 0 40px;
+}
+.about-me .info .hobbies .content {
+  box-sizing: border-box;
+  float: left;
+  width: 50%;
+  min-height: 100px;
+  overflow: hidden;
+}
+.about-me .info .hobbies .content h3{
+  color: #555;
+}
+.about-me .info .hobbies .content .icon {
+  float: left;
+  width: 12%;
+}
+.about-me .info .hobbies .content .icon i{
+  max-width: 100%;
+  padding-top: 10px;
+}
+.about-me .info .hobbies .content .text {
+  float: left;
+  width: 84%;
+  margin-left: 2%;
+}
+/* End About Me */
+
+
+/* Start My Skills */
+.my-skills {
+  padding-top: 30px;
+  padding-bottom: 50px;
+  overflow: hidden;
+}
+
+.my-skills .skills, .my-skills .progress {
+  width: 50%;
+  float: left;
+}
+.my-skills .skills h2{
+  margin: 25px 0 20px 40px;
+  color: #555;
+}
+.my-skills .skills p{
+  margin: 0 0 10px 40px;
+  line-height: 1.5;
+  color: #666;
+  }
+  .my-skills .skills p:last-of-type{
+    margin-top: 15px;
+  }
+  .my-skills .skills button{
+    padding: 10px 30px;
+    margin: 25px 0 20px 40px;
+  }
+  .my-skills .progress .technique {
+    margin-left: 50px;
+  }
+  .my-skills .progress .technique h3{
+    color: #555;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+  }
+  .my-skills .progress .technique div{
+    background-color: #f2f2f2;
+    height: 20px;
+    margin-top: 0;
+    margin-bottom: 25px;
+  }
+  .my-skills .progress .technique div span{
+    background-color: #2dcc70;
+    height: 20px;
+    display: block;
+    line-height: 20px;
+    text-align: right;
+    color: #fff;
+    font-weight: bold;
+  }
+/* End My Skills */
+
+
+/* Start Resume */
+.resume {
+  background-color: #f2f2f2;
+  padding-top: 50px;
+  padding-bottom: 70px;
+  text-align: center;
+}
+.resume h2{
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #555;
+}
+.resume p{
+  line-height: 1.5;
+  color: #666;
+  padding: 0 40px;
+}
+.resume button{
+  margin-top: 15px;
+}
+/* End Resume */
+
+
+/* Start My Education */
+.my-education {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  overflow: hidden;
+}
+.my-education .main{
+  width: 50%;
+  margin-right: 5%;
+  float: left;
+}
+.my-education .main h2{
+  margin: 25px 0 20px 40px;
+}
+.my-education .main p{
+  margin: 0 0 10px 40px;
+}
+.my-education .main p:last-of-type{
+  margin-top: 25px;
+}
+.my-education .exp {
+  width: 45%;
+  float: left;
+}
+.my-education .exp h3{
+  margin: 73px 0 10px 0;
+}
+.my-education .exp span{
+  display: block;
+  margin-bottom: 10px;
+}
+.my-education .exp span:last-of-type{
+  background-color: #2dcc70;
+  display: inline-block;
+  color: #fff;
+  padding: 3px 6px;
+  font-size: 0.9em;
+}
+.my-education .exp hr{
+  margin: 30px 0 10px 0px;
+  width: 97%;
+}
+/* End My Education */
+
+/* Start Testimonials */
+.testimonials {
+  background-color: #f2f2f2;
+  padding-top: 60px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+  .testimonials q{
+  font-size: 18px;
+  font-style: italic;
+  font-weight: bold;
+  color:#888;
+  font-family: tahoma,arial;
+line-height: 1.8;
+}
+.testimonials ul{
+  list-style: none;
+  padding-left: 0;
+  text-align: center;
+  margin-top: 80px;
+}
+.testimonials ul li{
+  width: 5px;
+  height: 5px;
+  border: 2px solid #2dcc70;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 2px;
+}
+.testimonials ul li:first-of-type{
+  background-color: #2dcc70;
+}
+.testimonials ul li:hover{
+  cursor: pointer;
+  background-color: #2dcc70;
+}
+/* End Testimonials */
+
+/* Start Portfolio */
+.portfolio {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+.portfolio h2{
+  padding: 20px 0 ;
+}
+.portfolio p{
+  padding: 10px 0 30px 0 ;
+}
+.portfolio .our-work {
+  overflow: hidden;
+}
+
+.portfolio .our-work>div {
+  float: left;
+  width: 33.333333%;
+  margin-bottom: 10px;
+}
+
+.portfolio .our-work>div img {
+  width: 92%;
+  margin: 10px;
+  padding: 3px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0px 10px 10px #ccc;
+}
+/*End Portfolio */
+
+
+/* Start Contact Me */
+.contact-me {
+  background-color: #252f31;
+  overflow: hidden;
+  padding-top: 50px;
+  padding-bottom: 70px;
+}
+
+.contact-me h2 {
+  color: #fff;
+  margin-left: 40px;
+}
+
+.contact-me p , .contact-me address{
+  color: #6A6E71;
+  margin-left: 40px;
+}
+.contact-me p strong{
+  color: #d1d6da;
+}
+
+.contact-me .info, .contact-me .form {
+  width: 45%;
+  float: left;
+}
+.contact-me .form{
+  margin-top: 10px;
+  margin-left: 5%;
+}
+.contact-me .form label{
+  display: block;
+  color: #d1d6da;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.contact-me .form input[type="text"]{
+  color: #fff;
+  background-color:#4b5557;
+  border: 0;
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+.contact-me .form input[type="email"]{
+  color: #fff;
+  background-color:#4b5557;
+  border: 0;
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+.contact-me .form textarea{
+  color: #fff;
+  background-color:#4b5557;
+  border: 0;
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+.contact-me .form input[type="submit"]{
+  background-color: #191e22;
+  color: #fff;
+  padding: 10px 20px;
+  border: 0;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+/* End Contact Me */
+
+
+/*Start Fototer*/
+.footer {
+  background-color: #191e22;
+  color: #6A6E71;
+  padding: 20px 0 40px 0;
+  text-align: center;
+  overflow: hidden;
+}
+.footer .footer-folat{
+  float: left;
+  width: 50%;
+  text-align: center;
+}
+.footer ul{
+  list-style: none;
+  padding-left: 0;
+  text-align: center;
+  /*margin-top: 10px;*/
+}
+
+.footer ul li{
+  width: 5px;
+  height: 5px;
+  display: inline-block;
+  margin: 2px;
+  padding: 5px;
+}
+.footer ul li a{
+  font-size: 1em;
+}
+.footer a{
+  color: #999;
+  text-decoration: none;
+  text-align: center;
+  font-size: 0.9em;
+}
+.footer a:hover{
+  color: #2dcc70;
+}
+/*End Footer*/
+
+/* Start My Framework */
+.my-button{
+  background: none;
+  border: 2px solid #2dcc70;
+  padding: 10px 30px;
+  color: #2dcc70;
+  font-weight: bold;
+}
+.paragrph{
+  line-height: 1.5;
+  color: #666;
+}
+.he{
+  color: #555;
+  /*text-transform: uppercase;*/
+}
+.sp{
+  line-height: 1.5;
+  color: #888;
+}
+.hr{
+  margin: 30px 0 30px 40px ;
+  background-color: #999;
+  height: 1px;
+  border: 0;
+  width: 95%;
+}
+/* End My Framework */
+/* Start Media Query */
+
+@media (max-width: 800px) {
+  .features .feat {
+    width: 95%;
+  }
+  .about-me .image {
+    width: 100%;
+  }
+  .about-me .image img {
+    width: 50%;
+    height: 70%;
+    margin: 0 25%;
+  }
+  .about-me .info, .about-me .info .hobbies .content {
+    width: 95%;
+  }
+  .my-skills, .my-skills .skills, .my-skills .progress {
+    width: 95%;
+  }
+  .resume {
+    width: 100%;
+  }
+  .my-education .main, .my-education .exp {
+    width: 95%;
+    padding: 0;
+    margin: 0;
+  }
+  .my-education .main .paragrph, .my-education .exp .paragrph {
+    width: 100%;
+    margin: 20px 0;
+  }
+  .my-education .main h2, .my-education .exp h3 {
+    width: 100%;
+    margin: 20px 0;
+    padding: 10px 0;
+  }
+  .my-education hr {
+    margin: 20px 0;
+    width: 100%;
+  }
+  .my-education .exp hr {
+    margin: 0 auto;
+    width: 50%;
+  }
+  .portfolio .our-work div {
+    width: 100%;
+  }
+  .portfolio .our-work div img{
+   width:70%;
+    }
+  .contact-me .info, .contact-me .form {
+    width: 95%;
+  }
+  .footer .footer-folat {
+    width: 95%;
   }
 }
-
-@media(max-width: 600px){
-  #project-grid{
-    grid-template-columns: 1fr;
-  }
-}
+/* End Media Query */
   </style>
-  </head>
-  <body>
-<header class="header">
- 
-</header>
-    <body>
-    <nav id="navbar">
-      <a class="nav-link" href="#welcome-section">About</a>
-      <a class="nav-link" href="#projects">Work</a>
-      <a class="nav-link" href="#contact">Contact</a>
-    </nav>
-    <section id="welcome-section">
-      <h1>Hey I am Niraj Jain</h1>
-      <h2 id="ws-subtitle" class="italic">a Campaign Executive</h2>
-    </section>
-    <section id="projects">
-      <h2 id="projects-title">These are some of my projects</h2>
-      <hr />
-      <div id="project-grid">
-        <a class="project-tile" href="#">
-          <img src="https://shots.codepen.io/K4SP-ITeng/pen/gOdMRNP-512.jpg?version=1677162314">
-          <p>Survey Form</p>
-        </a>
-        <a class="project-tile" href="#">
-          <img src="https://shots.codepen.io/K4SP-ITeng/pen/dyqXdxe-512.jpg?version=1677175273">
-          <p>Tribute Page</p>
-        </a>
-        <a class="project-tile" href="#">
-          <img src="https://shots.codepen.io/K4SP-ITeng/pen/XWPKEJR-512.jpg?version=1677175450">
-          <p>JS Documentation</p>
-        </a>
-        <a class="project-tile" href="#">
-          <img src="https://shots.codepen.io/K4SP-ITeng/pen/PodzRqg-512.jpg?version=1677175599">
-          <p>Product Landing Page</p>
-        </a>
+<body>
+
+  <!-- Start Header -->
+
+  <div class="header">
+    <div class="slider">
+      <div class="container">
+        <div class="intro">
+          <h2>Web Developer Portfolio Template</h2>
+          <button class="my-button" type="button" name="button"> Learn More</button>
+        </div>
       </div>
-      <div class="btn">
-        <a class="see-more" href="#">Show all <span id="link-arrow">></span></a>
-      </div>
-    </section>
-    <div id="contact">
-      <h2 id="contact-title">Let's work together...</h2>
-      <p class="italic" id="contact-subtitle">How do you take your coffee?</p>
     </div>
-</div>
-  </body>
+    <div class="navbar">
+      <div class="container">
+        <h2>Re<span>stom</span></h2>
+        <ul>
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Skills</a></li>
+          <li><a href="#">Resume</a></li>
+          <li><a href="#">Testemonials</a></li>
+          <li><a href="#">Portofolio</a></li>
+          <li><a href="#">Contact Me</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- End Header -->
+
+  <!-- Start Features -->
+
+  <div class="features">
+    <div class="container">
+      <div class="feat">
+        <h2>Values</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt Duis aute irure dolor in reprehenderit. </p>
+      </div>
+      <div class="feat">
+        <h2>Goals</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt Duis aute irure dolor in reprehenderit. </p>
+      </div>
+      <div class="feat">
+        <h2>Hobbies</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt Duis aute irure dolor in reprehenderit. </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- End Features -->
+
+
+  <!-- Start About Me -->
+
+  <div class="about-me">
+    <div class="containerB">
+      <div class="image">
+        <img src="https://source.unsplash.com/-ozu92PXFWU/400x600" alt="Test">
+      </div>
+      <div class="info">
+        <h2>About Me</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt Duis aute irure dolor in reprehenderit Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt Duis aute irure dolor in
+          reprehenderit .</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt Duis aute irure dolor in reprehenderit .</p>
+        <div class="hobbies">
+          <!-- Start Box Content -->
+          <div class="content">
+            <!-- Start Icon -->
+            <div class="icon">
+              <i class="fa fa-paint-brush fa-2x"></i>
+            </div>
+            <!-- End Icon -->
+            <!-- Start Text -->
+            <div class="text">
+              <h3>Web Design</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt Duis aute irure dolor in reprehenderit .</p>
+            </div>
+            <!-- End Text -->
+          </div>
+          <!-- End Box Content -->
+
+          <!-- Start Box Content -->
+          <div class="content">
+            <!-- Start Icon -->
+            <div class="icon">
+              <i class="fa fa-users  fa-2x"></i>
+            </div>
+            <!-- End Icon -->
+            <!-- Start Text -->
+            <div class="text">
+              <h3>Marketing</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt Duis aute irure dolor in reprehenderit .</p>
+            </div>
+            <!-- End Text -->
+          </div>
+          <!-- End Box Content -->
+
+          <!-- Start Box Content -->
+          <div class="content">
+            <!-- Start Icon -->
+            <div class="icon">
+              <i class="fa fa-magic fa-2x"></i>
+            </div>
+            <!-- End Icon -->
+            <!-- Start Text -->
+            <div class="text">
+              <h3>Graphic Design</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt Duis aute irure dolor in reprehenderit .</p>
+            </div>
+            <!-- End Text -->
+          </div>
+          <!-- End Box Content -->
+
+          <!-- Start Box Content -->
+          <div class="content">
+            <!-- Start Icon -->
+            <div class="icon">
+              <i class="fa fa-line-chart fa-2x"></i>
+            </div>
+            <!-- End Icon -->
+            <!-- Start Text -->
+            <div class="text">
+              <h3>Seo</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt Duis aute irure dolor in reprehenderit .</p>
+            </div>
+            <!-- End Text -->
+          </div>
+          <!-- End Box Content -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End About Me -->
+
+  <!-- Start My Skills -->
+
+  <div class="my-skills">
+    <div class="container">
+      <div class="skills">
+        <h2>My skills</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt Duis aute irure dolor in reprehenderit Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt Duis aute irure dolor in
+          reprehenderit .</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt Duis aute irure dolor in reprehenderit .</p>
+        <button type="button" class="my-button" name="button">Contact Me</button>
+      </div>
+      <div class="progress">
+        <div class="technique">
+          <h3>Html / CSS</h3>
+          <div><span style="width:83%">83% &nbsp;</span></div>
+        </div>
+        <div class="technique">
+          <h3>Php / MySql</h3>
+          <div><span style="width:88%">88% &nbsp;</span></div>
+        </div>
+        <div class="technique">
+          <h3>Wordpress</h3>
+          <div><span style="width:75%">75% &nbsp;</span></div>
+        </div>
+        <div class="technique">
+          <h3>Graphic Design</h3>
+          <div><span style="width:90%">90% &nbsp;</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- End My Skills -->
+
+  <!-- Start Resume -->
+  <div class="resume">
+    <div class="container">
+      <h2>Resume</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt Duis aute irure dolor in reprehenderit Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt Duis aute irure dolor. </p>
+      <button type="button" class="my-button" name="button">Download Resume</button>
+    </div>
+  </div>
+  <!-- End Resume -->
+
+  <!-- Start My Education -->
+
+  <div class="my-education">
+    <div class="container">
+      <div class="main">
+        <h2 class="he">My Education</h2>
+        <p class="paragrph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt Duis aute irure dolor in reprehenderit Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt Duis aute irure dolor in
+          reprehenderit .</p>
+        <p class="paragrph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt Duis aute irure dolor in reprehenderit .</p>
+      </div>
+      <div class="exp">
+        <div class="certificate">
+          <h3 class="he">Graphic Design Diploma</h3>
+          <span class="sp"><strong>Reeves College</strong> / June 2008 / May 2010</span>
+          <span>4.0 GPA</span>
+          <hr class="hr">
+          <p class="paragrph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt Duis aute irure dolor in reprehenderit .</p>
+        </div>
+        <div class="certificate">
+          <h3 class="he">CIT Diploma</h3>
+          <span class="sp"><strong>Lithbridge College</strong> / June 2006 / May 2008</span>
+          <span>4.0 GPA</span>
+          <hr class="hr">
+          <p class="paragrph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt Duis aute irure dolor in reprehenderit .</p>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+      <hr class="hr">
+      <div class="main">
+        <h2 class="he">Work Experience</h2>
+        <p class="paragrph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt Duis aute irure dolor in reprehenderit Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt Duis aute irure dolor in
+          reprehenderit .</p>
+        <p class="paragrph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt Duis aute irure dolor in reprehenderit .</p>
+      </div>
+      <div class="exp">
+        <div class="certificate">
+          <h3 class="he">Lead Web Designer</h3>
+          <span class="sp"><strong>ABC Company ,Saskatoon</strong> / June 2011 / Presnt</span>
+          <span>5 Year</span>
+          <hr class="hr">
+          <p class="paragrph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt Duis aute irure dolor in reprehenderit .</p>
+        </div>
+        <div class="certificate">
+          <h3 class="he">Junior Designer</h3>
+          <span class="sp"><strong>XYZ Company ,Lithbridge</strong> / June 2008 / May 2009</span>
+          <span>1 year</span>
+          <hr class="hr">
+          <p class="paragrph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt Duis aute irure dolor in reprehenderit .</p>
+        </div>
+        <div class="certificate">
+          <h3 class="he">Web Developer</h3>
+          <span class="sp"><strong>The Company ,Lithbridge</strong> / June 2007 / May 2008</span>
+          <span>1 Year</span>
+          <hr class="hr">
+          <p class="paragrph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt Duis aute irure dolor in reprehenderit .</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- End My Education -->
+
+  <!-- Start Testimonials -->
+  <div class="testimonials">
+    <div class="container">
+      <q>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt Duis aute irure dolor in reprehenderit Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt Duis aute irure dolor in
+        reprehenderit Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt Duis aute irure dolor in reprehenderit</q>
+      <h3 class="he">Fares</h3>
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+  </div>
+  <!-- End Testimonials -->
+
+  <!-- Start Portfolio -->
+
+  <div class="portfolio">
+    <div class="container">
+      <h2 class="he">Portfolio</h2>
+      <p class="paragrph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt Duis aute irure dolor in reprehenderit. </p>
+      <div class="our-work">
+        <!-- <div><img src="HeroImg.jpg" alt="Test"></div>
+        <div><img src="HeroImg.jpg" alt="Test"></div>
+        <div><img src="HeroImg.jpg" alt="Test"></div>
+        <div><img src="HeroImg.jpg" alt="Test"></div>
+        <div><img src="HeroImg.jpg" alt="Test"></div>
+        <div><img src="HeroImg.jpg" alt="Test"></div>
+        <div><img src="HeroImg.jpg" alt="Test"></div>
+        <div><img src="HeroImg.jpg" alt="Test"></div>
+        <div><img src="HeroImg.jpg" alt="Test"></div> -->
+        <div><img src="https://source.unsplash.com/Hq1epA93Bj0/350x350" alt="Test"></div>
+        <div><img src="https://source.unsplash.com/Hq1epA93Bj0/350x350" alt="Test"></div>
+        <div><img src="https://source.unsplash.com/Hq1epA93Bj0/350x350" alt="Test"></div>
+        <div><img src="https://source.unsplash.com/Hq1epA93Bj0/350x350" alt="Test"></div>
+        <div><img src="https://source.unsplash.com/Hq1epA93Bj0/350x350" alt="Test"></div>
+        <div><img src="https://source.unsplash.com/Hq1epA93Bj0/350x350" alt="Test"></div>
+      <!--  <div><img src="https://source.unsplash.com/5fNmWej4tAA/600x600" alt="Test"></div>
+        <div><img src="https://source.unsplash.com/s4dfrh7hdDU/600x600" alt="Test"></div>
+        <div><img src="https://source.unsplash.com/HQkz_lWT_lY/600x600" alt="Test"></div> -->
+      </div>
+    </div>
+  </div>
+  <!-- Start Portfolio -->
+
+  <!-- Start Contact Me -->
+  <div class="contact-me">
+    <div class="container">
+      <div class="info">
+        <h2>Contact Me</h2>
+        <p class="paragrph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt Duis aute irure dolor in reprehenderit. </p>
+        <address class="paragrph">
+          123 Street Name <br>
+          Istunbul <br>
+          Areena Area <br>
+        </address>
+        <p class="paragrph">
+          <strong>Email:</strong> me@mail.com <br>
+          <strong>Phone:</strong> +905123456789
+        </p>
+      </div>
+      <form class="form">
+        <label>Name *</label>
+        <input type="text" name="Name" value="Your Name">
+        <label>Email Adress *</label>
+        <input type="email" name="Email Adress" value="Your Email Adress">
+        <label>Message *</label>
+        <textarea name="Message" rows="10" cols="80">Your Message</textarea>
+        <input type="submit" name="Contact Me" value="Contact Me">
+      </form>
+    </div>
+  </div>
+  <!-- End Contact Me -->
+
+  <!-- Start Fototer -->
+  <div class="footer">
+    <div class="container">
+      <div class="footer-folat">
+      <span class="he">Copyright &copy; 2017 Restom</span>
+      <ul>
+        <li><a href="https://www.linkedin.com/in/youssef-restom-83491621"><i class="fa fa-fw fa-linkedin"></i></a></li>
+        <li><a href="https://github.com/yrestom"><i class="fa fa-fw fa-github"></i></a></li>
+        <li><a href="https://twitter.com/yousefrestom"><i class="fa fa-fw fa-twitter"></i></a></li>
+        <li><a href="mailto:youssef.restom@gmail.com" title="My E-mail"><i class="fa fa-fw fa-envelope"></i></a></li>
+      </ul>
+      </div>
+<div class="footer-float">
+      <div class="bigThink">
+        <h4 class="he">Big thanks to</h4>
+        <a href="http://elzero.org/">Elzero Web School</a>
+      </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- End Fototer -->
+</body>
 </html>
