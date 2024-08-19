@@ -1,430 +1,211 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <title>Web Developer Portfolio Template</title>
-  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/7.0.0/normalize.css">
-   <script id='_webengage_script_tag' type='text/javascript'>
-var webengage;!function(w,e,b,n,g){function o(e,t){e[t[t.length-1]]=function(){r.__queue.push([t.join("."),
-arguments])}}var i,s,r=w[b],z=" ",l="init options track screen onReady".split(z),a="webPersonalization feedback survey notification notificationInbox".split(z),c="options render clear abort".split(z),p="Prepare Render Open Close Submit Complete View Click".split(z),u="identify login logout setAttribute".split(z);if(!r||!r.__v){for(w[b]=r={__queue:[],__v:"6.0",user:{}},i=0;i < l.length;i++)o(r,[l[i]]);for(i=0;i < a.length;i++){for(r[a[i]]={},s=0;s < c.length;s++)o(r[a[i]],[a[i],c[s]]);for(s=0;s < p.length;s++)o(r[a[i]],[a[i],"on"+p[s]])}for(i=0;i < u.length;i++)o(r.user,["user",u[i]]);setTimeout(function(){var f=e.createElement("script"),d=e.getElementById("_webengage_script_tag");f.type="text/javascript",f.async=!0,f.src=("https:"==e.location.protocol?"https://ssl.widgets.webengage.com":"http://cdn.widgets.webengage.com")+"/js/webengage-min-v-6.0.js",d.parentNode.insertBefore(f,d)})}}(window,document,"webengage");webengage.init("~15ba1dbb5");
-</script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Rakshabandhan Falguni!💖</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-<style>
-.container {
-  width: 80%;
-  margin: auto;
-}
 
-.containerB {
-  width: 100%;
-
-  margin: auto;
-
-  box-sizing: border-box;
-}
-
-.clearfix {
-  clear: both;
-}
-
-
-/* Start Header */
-.header .slider {
-  background-color: #eee;
-  height: 600px;
-  background-image: url("https://i.imgur.com/5TL0dDK.jpg");
-  background-size: cover;
-}
-
-.header .slider .intro {
-  padding-top: 250px;
-  text-align: center;
-  color: #fff;
-}
-
-.header .slider .intro h2 {
-  margin: 0 auto;
-  font-size: 50px;
-  text-shadow: 5px 5px 5px #252f31;
-  border-top: 4px solid #fff;
-  border-bottom: 4px solid #fff;
-  padding: 5px 0;
-}
-
-.header .slider .intro button {
-  background: none;
-  color: #fff;
-  margin-top: 40px;
-  font-size: 20px;
-  border: 2px solid #fff;
-  font-weight: bold;
-  padding: 10px 30px;
-}
-
-.header .navbar {
-  background-color: #252f31;
-  color: #fff;
-  overflow: hidden;
-}
-
-.header .navbar h2 {
-  float: left;
-  text-transform: uppercase;
-}
-
-.header .navbar h2 span {
-  color: #2ecc71;
-}
-
-.header .navbar ul {
-  list-style: none;
-  padding-left: 0;
-  overflow: hidden;
-  float: right;
-}
-
-.header .navbar ul li {
-  float: left;
-  padding: 10px;
-}
-
-.header .navbar ul li a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.header .navbar ul li.active a, .header .navbar ul li a:hover {
-  color: #2ecc71;
-}
-
-/* Start Resume */
-.resume {
-  background-color: #f2f2f2;
-  padding-top: 50px;
-  padding-bottom: 70px;
-  text-align: center;
-}
-.resume h2{
-  text-transform: uppercase;
-  font-weight: bold;
-  color: #555;
-}
-.resume p{
-  line-height: 1.5;
-  color: #666;
-  padding: 0 40px;
-}
-.resume button{
-  margin-top: 15px;
- }
-
-/* Start Portfolio */
-.portfolio {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  text-align: center;
-}
-.portfolio h2{
-  padding: 20px 0 ;
-}
-.portfolio p{
-  padding: 10px 0 30px 0 ;
-}
-.portfolio .our-work {
-  overflow: hidden;
-}
-
-.portfolio .our-work>div {
-  float: left;
-  width: 33.333333%;
-  margin-bottom: 10px;
-}
-
-.portfolio .our-work>div img {
-  width: 92%;
-  margin: 10px;
-  padding: 3px;
-  background-color: #fff;
-  border: 1px solid #ccc;
-  box-shadow: 0px 10px 10px #ccc;
-}
-/*End Portfolio */
-
-
-/* Start Contact Me */
-.contact-me {
-  background-color: #252f31;
-  overflow: hidden;
-  padding-top: 50px;
-  padding-bottom: 70px;
-}
-
-.contact-me h2 {
-  color: #fff;
-  margin-left: 40px;
-}
-
-.contact-me p , .contact-me address{
-  color: #6A6E71;
-  margin-left: 40px;
-}
-.contact-me p strong{
-  color: #d1d6da;
-}
-
-.contact-me .info, .contact-me .form {
-  width: 45%;
-  float: left;
-}
-.contact-me .form{
-  margin-top: 10px;
-  margin-left: 5%;
-}
-.contact-me .form label{
-  display: block;
-  color: #d1d6da;
-  margin-bottom: 20px;
-  margin-top: 20px;
-}
-.contact-me .form input[type="text"]{
-  color: #fff;
-  background-color:#4b5557;
-  border: 0;
-  width: 80%;
-  padding: 10px;
-  margin-bottom: 20px;
-  border-radius: 5px;
-}
-.contact-me .form input[type="email"]{
-  color: #fff;
-  background-color:#4b5557;
-  border: 0;
-  width: 80%;
-  padding: 10px;
-  margin-bottom: 20px;
-  border-radius: 5px;
-}
-.contact-me .form textarea{
-  color: #fff;
-  background-color:#4b5557;
-  border: 0;
-  width: 80%;
-  padding: 10px;
-  margin-bottom: 20px;
-  border-radius: 5px;
-}
-.contact-me .form input[type="submit"]{
-  background-color: #191e22;
-  color: #fff;
-  padding: 10px 20px;
-  border: 0;
-  margin-top: 20px;
-  border-radius: 5px;
-}
-/* End Contact Me */
-
-
-/*Start Fototer*/
-.footer {
-  background-color: #191e22;
-  color: #6A6E71;
-  padding: 20px 0 40px 0;
-  text-align: center;
-  overflow: hidden;
-}
-.footer .footer-folat{
-  float: left;
-  width: 50%;
-  text-align: center;
-}
-.footer ul{
-  list-style: none;
-  padding-left: 0;
-  text-align: center;
-  /*margin-top: 10px;*/
-}
-
-.footer ul li{
-  width: 5px;
-  height: 5px;
-  display: inline-block;
-  margin: 2px;
-  padding: 5px;
-}
-.footer ul li a{
-  font-size: 1em;
-}
-.footer a{
-  color: #999;
-  text-decoration: none;
-  text-align: center;
-  font-size: 0.9em;
-}
-.footer a:hover{
-  color: #2dcc70;
-}
-/*End Footer*/
-
-/* Start My Framework */
-.my-button{
-  background: none;
-  border: 2px solid #2dcc70;
-  padding: 10px 30px;
-  color: #2dcc70;
-  font-weight: bold;
-}
-.paragrph{
-  line-height: 1.5;
-  color: #666;
-}
-.he{
-  color: #555;
-  /*text-transform: uppercase;*/
-}
-.sp{
-  line-height: 1.5;
-  color: #888;
-}
-.hr{
-  margin: 30px 0 30px 40px ;
-  background-color: #999;
-  height: 1px;
-  border: 0;
-  width: 95%;
-}
-/* End My Framework */
-/* Start Media Query */
-
-@media (max-width: 800px) {
-  .features .feat {
-    width: 95%;
-  }
-  .about-me .image {
-    width: 100%;
-  }
-  .about-me .image img {
-    width: 50%;
-    height: 70%;
-    margin: 0 25%;
-  }
-  .about-me .info, .about-me .info .hobbies .content {
-    width: 95%;
-  }
-  .my-skills, .my-skills .skills, .my-skills .progress {
-    width: 95%;
-  }
-  .resume {
-    width: 100%;
-  }
-  .my-education .main, .my-education .exp {
-    width: 95%;
-    padding: 0;
-    margin: 0;
-  }
-  .my-education .main .paragrph, .my-education .exp .paragrph {
-    width: 100%;
-    margin: 20px 0;
-  }
-  .my-education .main h2, .my-education .exp h3 {
-    width: 100%;
-    margin: 20px 0;
-    padding: 10px 0;
-  }
-  .my-education hr {
-    margin: 20px 0;
-    width: 100%;
-  }
-  .my-education .exp hr {
-    margin: 0 auto;
-    width: 50%;
-  }
-  .portfolio .our-work div {
-    width: 100%;
-  }
-  .portfolio .our-work div img{
-   width:70%;
-    }
-  .contact-me .info, .contact-me .form {
-    width: 95%;
-  }
-  .footer .footer-folat {
-    width: 95%;
-  }
-}
-/* End Media Query */
-  </style>
 <body>
-
-  <!-- Start Header -->
-
-  <div class="header">
-    <div class="slider">
-      <div class="container">
-        <div class="intro">
-          <h2>Hello its Niraj Jain a Campaign Executive</h2>
-          <button id=
-"callout" class="my-button" type="button" name="button"> Learn More</button>
-        </div>
-      </div>
-    </div>
-  <!-- Start Resume -->
-  <div class="resume">
-    <div class="container">
-      <h2>Resume</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt Duis aute irure dolor in reprehenderit Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt Duis aute irure dolor. </p>
-      <a href="https://drive.google.com/file/d/1V4ChVNXFMUolZnZQngEQWMO7dk-40UQo/view?usp=share_link" target="_blank" class="my-button">Download Resume</a>
-    </div>
+  <div class="motive">
+    <h2>
+      Hey Cutie Falguni. I have written a book for you! <br />
+      Your the best creature of the god...
+      <br />
+      <span> Thankyou For! 💖</span>
+    </h2>
   </div>
-  <!-- Start Contact Me -->
-  <div class="contact-me">
-    <div class="container">
-      <div class="info">
-        <h2>Contact Me</h2>
-        <p class="paragrph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt Duis aute irure dolor in reprehenderit. </p>
-        <address class="paragrph">
-          123 Street Name <br>
-          Istunbul <br>
-          Areena Area <br>
-        </address>
-        <p class="paragrph">
-          <strong>Email:</strong> me@mail.com <br>
-          <strong>Phone:</strong> +905123456789
-        </p>
-      </div>
-      <form class="form">
-        <label>Name *</label>
-        <input type="text" name="Name" value="Your Name">
-        <label>Email Adress *</label>
-        <input type="email" name="Email Adress" value="Your Email Adress">
-        <label>Message *</label>
-        <textarea name="Message" rows="10" cols="80">Your Message</textarea>
-        <input type="submit" name="Contact Me" value="Contact Me">
-      </form>
+  <div class="instruction" style="color: rgba(181, 181, 181, 0.61);"><b></b></div>
+  <div class="book">
+    <div class="page cover-front" onclick="movePage(this, 1)">
+      <h1>Happy</h1>
+      <h1>Rakhhiiee</h1>
+      <h1>💖</h1>
+      <img src="2.jpeg" alt=""
+        style="width: 300px; aspect-ratio: auto 320 / 240; height: 240px; border-color: antiquewhite;">
+      <div class="hat"><i class="fab fa-pied-piper-hat"></i></div>
+      <h2>Happy Rakhi Falguni!! 💖</h2>
     </div>
-  </div>
-  <!-- End Contact Me -->
+    <div class="page cover-front" onclick="movePage(this, 2)"></div>
+    <div class="page text-page" onclick="movePage(this, 3)">
+      <p>Dear Falguni💖, this is for you 🤞💖</p>
+      <p>
+        Having a sister like you is a blessing. You’ve been my protector, confidant, and friend. May this Raksha Bandhan
+        bring you all the joy and happiness you deserve. <b>Happy Raksha Bandhan!</b>
+      </p>
+      <video width="320" height="240" controls>
+        <source src="v.mp4" type="video/mp4" />
+      </video>
+      <br /><br />
+      <p>Note: Play the video Before Read it .</p>
 
-  <!-- Start Fototer -->
-  <div class="footer">
-    <div class="container">
-      <div class="footer-folat">
-      <span class="he">Copyright &copy; 2017 Restom</span>
-      <ul>
-        <li><a href="https://www.linkedin.com/in/youssef-restom-83491621"><i class="fa fa-fw fa-linkedin"></i></a></li>
-        <li><a href="https://github.com/yrestom"><i class="fa fa-fw fa-github"></i></a></li>
-        <li><a href="https://twitter.com/yousefrestom"><i class="fa fa-fw fa-twitter"></i></a></li>
-        <li><a href="mailto:youssef.restom@gmail.com" title="My E-mail"><i class="fa fa-fw fa-envelope"></i></a></li>
-      </ul>
-      </div>
-<div class="footer-float">
-      <div class="bigThink">
-        <h4 class="he">Big thanks to</h4>
-        <a href="http://elzero.org/">Elzero Web School</a>
-      </div>
-      </div>
+      <br /><br /><br />
+      <p>Please trun the page..</p>
     </div>
+    <div class="page text-page" onclick="movePage(this, 4)">
+      <p>
+       I want to tell you that I’m always there for you Falguni! <b>Happy Rakhi, sis!🤞💖</b>
+      </p>
+
+      <p>
+        Sending you lots of love and good wishes this Raksha Bandhan. Miss you, sister!"
+        "To the most amazing sister in the world, thank you for all the love, care, you've given me.
+        On this Rakhi, I wish you all the happiness and success in the world. <b>Happy Raksha Bandhan!</b>
+      </p>
+      <p>
+        Though we may not always be together, the love and connection we have remain strong, no matter the distance.
+        Your presence in my life has been a source of strength,
+        joy, and comfort. I cherish every moment we’ve spent together
+        and look forward to creating many more memories in the future.🏵️🏵️🏵️
+      </p>
+      <p>
+        On this Raksha Bandhan, I wish you all the happiness, success,
+        and love in the world. May our bond continue to grow stronger with each passing day.
+        Thank you for being not just a sister, but also a friend. Happy Raksha Bandhan!
+      </p>
+    </div>
+    <div class="page text-page" onclick="movePage(this, 5)">
+      <img src="1.jpeg" alt="" width="320" height="240">
+      <p>
+        As we celebrate this Raksha Bandhan, I wish you nothing but happiness, success, and fulfillment in everything
+        you do.
+        May you continue to shine brightly, and may our bond grow stronger with each passing day.
+        Thank you for being the incredible sister you are, and for filling my life with so much love and joy.</p>
+       
+    </div>
+   
+    <div class="page text-page" onclick="movePage(this, 6)">
+      <p>
+        Raksha Bandhan is a day that fills my heart with warmth and nostalgia. I find myself reminiscing about the
+        countless moments we've shared, each one contributing to the unbreakable bond we have today. From the early days
+        of our sibling rivalry to the deep friendship we've built over the years, every memory with you is a treasure I
+        hold dear.<br>
+        You’ve always been there, not just as a sister, but as someone who understands me in ways no one else can.
+        <p> Okay so here is your Gift A Amazone voucher you can use antime to buy anything for yourself hope you like it.</p>
+        <a href="https://plum.gift/zMz9xpPlUjanndQA">https://plum.gift/zMz9xpPlUjanndQA</a>
+        <img src="gift.png" alt="" width="350" height="300">
+       
+      </p>
+    </div>
+    <div class="page text-page">
+      <p>
+        On this Raksha Bandhan, I want to express just how much you mean to me. You are more than just a sister; you are
+        my best friend, and my biggest supporter. I couldn’t imagine my life without you in it. As we tie the rakhi this
+        year,
+        I pray that our bond continues to grow stronger and that you are blessed with all the happiness in the world.
+        Happy Raksha Bandhan!
+      </p>
+
+      <p>You are My Everything Falguni💖.</p>
+
+      <h2>Happiie Rakhii ~🏵️~</h2>
+      <br />
+      <img src="33.jpg" alt="" width="320" height="240">
+      <button id="botao1">YES Sure!</button>
+    </div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
+    <div class="page"></div>
   </div>
 
-
-  <!-- End Fototer -->
+  <script>
+    document.getElementById("botao1").addEventListener("click", function () {
+      alert("YAYY THANK U 😍❤️!!");
+    });
+  </script>
+  <script src="collegewishlist.js"></script>
 </body>
+
 </html>
