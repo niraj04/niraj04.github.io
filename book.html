@@ -1,72 +1,130 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Website</title>
+    <title>Netflix India – Watch TV Shows Online, Watch Movies Online</title>
+    <link rel="icon" href="images/netflix-logo-png-2616.png">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <script id='_webengage_script_tag' type='text/javascript'>
-      var webengage;!function(w,e,b,n,g){function o(e,t){e[t[t.length-1]]=function(){r.__queue.push([t.join("."),
-      arguments])}}var i,s,r=w[b],z=" ",l="init options track screen onReady".split(z),a="webPersonalization feedback survey notification notificationInbox".split(z),c="options render clear abort".split(z),p="Prepare Render Open Close Submit Complete View Click".split(z),u="identify login logout setAttribute".split(z);if(!r||!r.__v){for(w[b]=r={__queue:[],__v:"6.0",user:{}},i=0;i < l.length;i++)o(r,[l[i]]);for(i=0;i < a.length;i++){for(r[a[i]]={},s=0;s < c.length;s++)o(r[a[i]],[a[i],c[s]]);for(s=0;s < p.length;s++)o(r[a[i]],[a[i],"on"+p[s]])}for(i=0;i < u.length;i++)o(r.user,["user",u[i]]);setTimeout(function(){var f=e.createElement("script"),d=e.getElementById("_webengage_script_tag");f.type="text/javascript",f.async=!0,f.src=("https:"==e.location.protocol?"https://ssl.widgets.webengage.com":"http://cdn.widgets.webengage.com")+"/js/webengage-min-v-6.0.js",d.parentNode.insertBefore(f,d)})}}(window,document,"webengage");webengage.init("~15ba1dbb5");
-      </script>
 </head>
 <body>
-    <nav>
-        <div class="nav-container">
-            <div class="logo"><h1>Portfolio</h1></div>
-            <div class="links">
-                <a href="">Home</a>
-                <a href="">About us</a>
-                <a href="">Services</a>
-                <a href="">Portfolio</a>
-                <a href="">Contact</a>
+    <div class="box">
+    <div class="header">
+        <nav>
+            <img src="images/logo.png" alt="" class="logo">
+            <div>
+                <button class="english-logo"><img class="world-logo" src="images/world1.png" alt="">English <img src="images/down-icon.png" alt=""></button>
+                <button>Sign In</button>  
+            </div>
+        </nav>
+        <center>
+            <div class="content">
+            <h1>Unlimited movies, TV shows and more.</h1>
+            <h3>Watch anywhere. Cancel anytime.</h3>
+            <p>Ready to watch? Enter your email to create or restart your membership.</p>
+            <form class="signup">
+                <input type="email" placeholder="Email address" required>
+                <button class="signupbutton" type="submit">Get Started</button>
+            </form>
+            </div>
+        </center>
+        
+    </div>
+    </div>
+    <br>
+    <div class="features">
+        
+        <div class="rows">
+            <div class="text-column">
+                <h2>Enjoy on your TV.</h2>
+                <p>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
+            </div>
+            <div class="features-image">
+                <img src="images/feature-1.png" alt="">
             </div>
         </div>
-        <svg xmlns="http://www.w3.org/2000/svg" class="hamburg" height="32" width="34" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
-        <div class="dropdown">
-            <a href="">Home</a>
-            <a href="">About us</a>
-            <a href="">Services</a>
-            <a href="">Portfolio</a>
-            <a href="">Contact</a>
-            <svg xmlns="http://www.w3.org/2000/svg" class="cancel" height="34" width="32" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
-        </div>
-    </nav>
-    <section>
-        <div class="content">
-            <div class="main-content">
-                <h1 data-aos="fade-right" data-aos-duration="1500" >Hi! I Am</h1>
-                <span data-aos="fade-left" data-aos-duration="1500" data-aos-delay="200" >Niraj Jain</span>
-                <p data-aos="flip-up" data-aos-duration="1500"  data-aos-delay="400">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi ducimus, cumque accusantium eius tempora quisquam optio dolore ipsam nesciunt quam.</p>
-                <div class="buttons">
-                    <button data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="600">Download CV</button>
-                </div>
+        <br>
+        <div class="rows ">
+            <div class="oppo-text-column">
+                <h2>Download your shows to watch offline.</h2>
+                <p>Save your favourites easily and always have something to watch.</p>
             </div>
-            <div class="images">
-                <img src="main.png" data-aos="zoom-out" data-aos-duration="2000" >
+            <div class="oppo-features-image">
+                <img src="images/feature-2.png" alt="">
             </div>
         </div>
-    </section>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init({offset:1,});
-    </script>
-    <script>
-        const hamburg = document.querySelector('.hamburg')
-        const cancel = document.querySelector('.cancel')
-        const navbar = document.querySelector('.dropdown')
+        <div class="rows  ">
+            <div class="text-column">
+                <h2>Watch everywhere.</h2>
+                <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+            </div>
+            <div class="features-image">
+                <img src="images/feature-3.png" alt="">
+            </div>
+        </div>
+        
+        <div class="rows ">
+            <div class="oppo-text-column">
+                <h2>Create profiles for children.</h2>
+                <p>Send children on adventures with their favourite characters in a space made just for them—free with your membership.</p>
+            </div>
+            <div class="oppo-features-image">
+                <img src="images/feature-4.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="frequently">
+        <center>
+            <h1>Frequently Asked Questions</h1> 
+            <ul class="according">
+                <li>
+                    <input type="radio" name="according" id="first">
+                    <label for="first">What is Netflix? </label>
+                    <div class="contain">
+                        <p>Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more – on thousands of internet-connected devices.<br>You can watch as much as you want, whenever you want, without a single ad – all for one low monthly price. There's always something new to discover, and new TV shows and movies are added every week!</p>
+                    </div>
+                </li>
+                <li>
+                    <input type="radio" name="according" id="second">
+                    <label for="second">How much does Netflix cost?</label>
+                    <div class="contain">
+                        <p>Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from ₹ 149 to ₹ 649 a month. No extra costs, no contracts.</p>
+                    </div>
+                </li>
+                <li>
+                    <input type="radio" name="according" id="third">
+                    <label for="third">Where can I watch?</label>
+                    <div class="contain">
+                        <p>Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles.<br>You can also download your favourite shows with the iOS, Android, or Windows 10 app. Use downloads to watch while you're on the go and without an internet connection. Take Netflix with you anywhere.</p>
+                    </div>
+                </li>
+                <li>
+                    <input type="radio" name="according" id="fourth">
+                    <label for="fourth">How do I cancel?</label>
+                    <div class="contain">
+                        <p>Netflix is flexible. There are no annoying contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees – start or stop your account anytime.</p>
+                    </div>
+                </li>
+                <li>
+                    <input type="radio" name="according" id="fifth">
+                    <label for="fifth">What can I watch on Netflix?</label>
+                    <div class="contain">
+                        <p>Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want.</p>
+                    </div>
+                </li>
+                <li>
+                    <input type="radio" name="according" id="sixth">
+                    <label for="sixth">Is Netflix good for kids?</label>
+                    <div class="contain">
+                        <p>The Netflix Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and films in their own space.<br>Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids can watch and block specific titles you don’t want kids to see.</p>
+                    </div>
+                </li>
+            </ul>
+            
+           
+        </center>
+        
+    </div>
 
-        hamburg.addEventListener("click", ()=>{
-            navbar.style.transform = "translateY(0px)"
-            hamburg.style.display = "none"
-        })
-
-        cancel.addEventListener("click", ()=>{
-            navbar.style.transform = "translateY(-300px)"
-            hamburg.style.display = "block"
-        })
-    </script>
 </body>
 </html>
